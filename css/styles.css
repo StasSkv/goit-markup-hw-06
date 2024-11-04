@@ -127,10 +127,18 @@ fieldset {
 }
 
 .menu-nav-btn {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-navigation-list-stop {
     display: none;
   }
@@ -144,23 +152,15 @@ fieldset {
   .menu-container {
     align-items: center;
   }
-
-  .menu-nav-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    padding: 0;
-    cursor: pointer;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .menu {
     max-width: 768px;
+  }
+
+  .menu-nav-btn {
+    display: none;
   }
 
   .navigation {
@@ -439,7 +439,7 @@ fieldset {
 
   .about-us-list {
     flex-direction: column;
-    gap: 27px;
+    gap: 72px;
   }
 }
 
